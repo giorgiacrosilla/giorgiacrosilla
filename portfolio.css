@@ -1,5 +1,6 @@
 body {
     padding:5%;
+    background-color: aliceblue !important;
 }
 section {
     height:fit-content;
@@ -9,6 +10,10 @@ section {
     height: 50vh;
 }
 
+h2 {
+    margin-bottom: 3% !important;
+}
+
 img{
     border-radius:50%;
     width:300px;
@@ -16,7 +21,7 @@ img{
     float:left;
 }
 
-.container {
+.container1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,4 +31,13 @@ img{
 .card {
     width: 47%;
     margin-bottom: 5%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+svg {
+    width: 50px;
 }
