@@ -1,6 +1,8 @@
-body {
-    padding:5%;
+main {
+    margin:2%;
     background-color: aliceblue !important;
+    border-radius: 5rem;
+    padding:2%
 }
 section {
     height:fit-content;
@@ -36,8 +38,15 @@ img{
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap:2%;
 }
 
 svg {
-    width: 50px;
+    width: 30px;
 }
+
+a.btn.btn-primary {
+    color: black;
+    background-color: transparent;
+    border-color: lightseagreen;}
