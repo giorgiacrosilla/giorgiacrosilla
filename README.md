@@ -1,4 +1,9 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Aerial_view_of_Copacabana_beach.jpg/535px-Aerial_view_of_Copacabana_beach.jpg"/>
+<style>
+    img{
+        border-radius:50%;
+    }
+</style>
+<img src="![immagine profilo](IMG_20210309_1500201.jpg)"/>
 Giorgia Crosilla
 
 Education:
