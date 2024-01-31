@@ -84,6 +84,26 @@ ul li {
   margin-bottom: 2%;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e1c4ff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e1c4ff; 
+}
+
 @media screen and (max-width: 971px) {
   main {
     padding:4%;
