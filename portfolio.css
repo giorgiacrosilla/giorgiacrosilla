@@ -1,52 +1,112 @@
+body {
+  background-color: #111 !important;
+}
 main {
-    margin:2%;
-    background-color: aliceblue !important;
-    border-radius: 5rem;
-    padding:2%
+  margin: 2%;
+  background-color: #111 !important;
+  border-radius: 2rem;
+  padding: 2%;
+  color: white;
+  border: 2px solid #e1c4ff;
 }
 section {
-    height:fit-content;
+  height: fit-content;
+}
+
+h1 {
+  margin-bottom: 3% !important;
+  margin-left:3% !important;
 }
 
 .introduction {
-    height: 50vh;
+  height: fit-content;
+  display: flex;
+  margin-bottom:5%;
+  justify-content: space-evenly;
 }
 
 h2 {
-    margin-bottom: 3% !important;
+  margin-bottom: 3% !important;
 }
 
-img{
-    border-radius:50%;
-    width:300px;
-    height:300px;
-    float:left;
+img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  float: left;
 }
 
 .container1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-    width: 47%;
-    margin-bottom: 5%;
+  width: 30%;
+  margin-bottom: 5%;
+  background: black !important;
+  color: white !important;
+  border-radius: 5rem;
+  border: 2px solid white !important;
+  box-shadow: 4px 5px #88888847;
+}
+
+a.btn.btn-primary,
+a {
+  color: white !important;
+  background-color: transparent;
+  border-color: #e1c4ff;
+  text-decoration: none !important;
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
 }
 
 svg {
-    width: 30px;
+  width: 24px;
+  fill: white;
+  height: 24px;
+  margin-bottom: 2%;
 }
 
-a.btn.btn-primary {
-    color: black;
-    background-color: transparent;
-    border-color: lightseagreen;}
+ul li {
+  list-style: none;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 971px) {
+  main {
+    padding:4%;
+  }
+  .introduction,
+  .container1 {
+    flex-direction: column;
+  }
+  .card {
+    width: unset;
+  }
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: unset;
+  }
+  .introduction #img{
+    text-align: center;
+    margin-bottom:3%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
