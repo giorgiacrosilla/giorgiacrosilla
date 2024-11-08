@@ -4,36 +4,66 @@ body {
 main {
   margin: 2%;
   background-color: #111 !important;
-  border-radius: 2rem;
-  padding: 2%;
-  color: white;
-  border: 2px solid #e1c4ff;
+  display: flex;
 }
 section {
-  height: fit-content;
+  padding: 2%;
+  color: white;
+}
+
+.introduction {
+  width: 20%;
+  position: sticky;
+  margin-right: 1%;
+  top: 1px;
+  border: 2px solid #e1c4ff;
+  border-radius: 2rem;
+}
+
+.projects {
+  width: 80%;
+  position: inherit;
 }
 
 h1 {
   margin-bottom: 3% !important;
-  margin-left:3% !important;
+  margin-left: 3% !important;
 }
 
 .introduction {
   height: fit-content;
   display: flex;
-  margin-bottom:5%;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.introduction * {
+  margin-bottom: 6%;
+}
+
+#svg {
+  margin-top: 10%;
+  margin-bottom: 0%;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  width: 100% !important;
+  position: relative;
 }
 
 h2 {
   margin-bottom: 3% !important;
 }
 
-img {
+.introduction img {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  float: left;
+  width: 200px;
+  height: 200px;
+  margin: auto;
 }
 
 .container1 {
@@ -59,6 +89,15 @@ a {
   background-color: transparent;
   border-color: #e1c4ff;
   text-decoration: none !important;
+}
+
+.btn.btn-primary {
+  background-color: transparent;
+  border-color: #e1c4ff;
+}
+
+.btn:hover {
+  background-color: rgb(29, 29, 29);
 }
 
 .card-title {
@@ -91,26 +130,40 @@ ul li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black; 
+  background: black;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e1c4ff; 
+  background: #e1c4ff;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #e1c4ff; 
+  background: #e1c4ff;
 }
 
 @media screen and (max-width: 971px) {
   main {
-    padding:4%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
   }
+
   .introduction,
   .container1 {
     flex-direction: column;
+  }
+
+  .introduction {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+    width: 100%;
+    position: relative;
   }
   .card {
     width: unset;
@@ -119,14 +172,18 @@ ul li {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    float: unset;
   }
-  .introduction #img{
+  .introduction #img {
     text-align: center;
-    margin-bottom:3%;
+    margin-bottom: 3%;
+    margin: auto;
   }
 
   h1 {
     text-align: center;
+  }
+
+  .projects {
+    width: 100%;
   }
 }
