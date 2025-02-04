@@ -47,6 +47,10 @@
           aria-expanded="false">
           Master's degree projects
         </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther"
+          aria-expanded="false">
+          Research projects
+        </button>
       </div>
 
       <div class="accordion">
@@ -59,12 +63,13 @@
               language models (LLMs) for deciphering handwritten text, focusing on benchmarking multimodal LLMs for
               handwritten text recognition (HTR) with multilingual datasets, including the Belle Greene dataset.
               Additionally, I used LLMs to extract entities from Mary Berenson's diaries, integrating this information
-              into RDF following OA schema.</p>
+              into RDF following OA schema. Between 2024 and the beginning of 2025, I collaborated with FBK - Fondazione
+              Bruno Kessler for a digitization project and script development involving historical journals.</p>
           </div>
         </div>
         <div class="collapse" id="collapseProjects" data-bs-parent=".accordion">
           <div class="card card-body">
-            
+
             <div class="container1">
               <div class="card">
                 <div class="card-body">
@@ -190,6 +195,38 @@
             </div>
           </div>
         </div>
+        <div class="collapse" id="collapseOther" data-bs-parent=".accordion">
+          <div class="card card-body">
+
+            <div class="container1">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Belle Greene HTR dataset</h5>
+                  <p class="card-text">
+                    The Belle Greene Dataset is a collection designed for full-page handwritten text recognition tasks.
+                    It includes 4,135 digitized images of 605 letters written by Belle Greene to Bernard Berenson
+                    between 1909 and 1948. Accompanying these images are ground-truth semi-diplomatic transcriptions in
+                    .txt and .xml formats, along with metadata extracted from the letters.
+                  </p>
+                  <a href="https://zenodo.org/records/14780448" class="btn btn-primary">Zenodo repository</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Semantic Annotator Extractor</h5>
+                  <p class="card-text">
+                    In this project, LLMs (Claude Sonnet 3.5 Latest and GPT-4) are used to generate complete OA RDF
+                    annotations for places and dates extracted from diary pages, as well as to disambiguate places'
+                    Wikidata IDs.
+                  </p>
+                  <a href="https://github.com/giorgiacrosilla/MB_annotations_extractor" class="btn btn-primary">GitHub
+                    repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </section>
 
     <footer></footer>
